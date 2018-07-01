@@ -31,7 +31,7 @@ and destinations. If matches build the response with the help of domain model an
 3.Implemented Hystrix Dashboard to get the desired metrics and displayed the service in Hystrix Dashboard
 
 4.Used Spring Oauth2 and Spring security to create a token with grant type = client_credentials and username = travel-app-client and password=psw.
-Without token the REST API cannot be accessed
+Without token the REST API cannot be accessed. Implemented authentication and authorization
 
 5.Written a htmlpage which consumes a javascript code to hit the REST API and consume the response and display in the page(not fully implemented).
 
