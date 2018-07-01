@@ -1,0 +1,45 @@
+Description:
+
+Assuming mock service will give the response in this format:
+
+Mock Service Response:
+
+{
+	"faredetails": [{
+			"journeydetails": {
+				"origin": "MAA",
+				"destination": "LHR",
+							}
+		},
+		{
+			"journeydetails": {
+				"origin": "DEL",
+				"destination": "MAA",
+				
+			}
+		}
+	]
+
+}
+
+
+1.Using JsonNode and ObjectMapper , traversed through the response and compared the passed origin and destination with the mock service origin 
+and destinations. If matches build the response with the help of domain model and return back the response.
+
+2.Implemented Cirucit Breaker to get the "System Down" Error when service is not available
+
+3.Implemented Hystrix Dashboard to get the desired metrics and displayed the service in Hystrix Dashboard
+
+4.Used Spring Oauth2 and Spring security to create a token with grant type = client_credentials and username = travel-app-client and password=psw.
+Without token the REST API cannot be accessed
+
+5.Written a htmlpage which consumes a javascript code to hit the REST API and consume the response and display in the page(not fully implemented).
+
+
+
+Doubts:
+1.Didn't understand the requirement of how to set the fare value.(Once clarified will implement).
+2.Didn't understand about the parallel calls(Once i get understanding will implement the code)
+
+
+Please check and share the comments
